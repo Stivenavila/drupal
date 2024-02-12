@@ -1,0 +1,257 @@
+... on RouteInternal {
+	__typename
+	entity {
+		... on NodeRecreationActivity {
+			__typename
+			id
+			title
+			button {
+				url {
+					title
+					url
+				}
+			}
+			carruselImages {
+				mediaImage {
+					url
+					alt
+				}
+			}
+			tabsInfo {
+				itemsInfo {
+					tabTitle
+					tabBody {
+						processed
+					}
+					items {
+						description
+						title
+						icon {
+							mediaImage1 {
+								url
+								alt
+							}
+						}
+					}
+				}
+			}
+			body {
+				processed
+			}
+			sectionCifras {
+				itemsCifrasTurismo {
+					componenteTitle {
+						title
+						pSubtitle
+					}
+					icon {
+						mediaImage1 {
+							url
+							alt
+						}
+					}
+				}
+			}
+			sectionCards {
+				componenteTitle {
+					title
+					pSubtitle
+				}
+				button {
+					url {
+						url
+						title
+					}
+				}
+				itemsCardPlan {
+					componenteTitle {
+						title
+						pSubtitle
+					}
+					image {
+						mediaImage {
+							url
+							alt
+						}
+					}
+				}
+			}
+			metatag {
+				... on MetaTagValue {
+					__typename
+					attributes {
+						content
+					}
+				}
+			}
+		}
+		... on NodeRecreationalCenter {
+			__typename
+			id
+			title
+			button {
+				url {
+					title
+					url
+				}
+			}
+			carruselImages {
+				mediaImage {
+					url
+					alt
+				}
+			}
+			tabsInfo {
+				itemsInfo {
+					tabTitle
+					tabBody {
+						processed
+					}
+					items {
+						description
+						title
+						icon {
+							mediaImage1 {
+								url
+								alt
+							}
+						}
+					}
+				}
+			}
+			body {
+				processed
+			}
+			sectionCifras {
+				itemsCifrasTurismo {
+					componenteTitle {
+						title
+						pSubtitle
+					}
+					icon {
+						mediaImage1 {
+							url
+							alt
+						}
+					}
+				}
+			}
+			sectionCards {
+				componenteTitle {
+					title
+					pSubtitle
+				}
+				button {
+					url {
+						url
+						title
+					}
+				}
+				itemsCardPlan {
+					componenteTitle {
+						title
+						pSubtitle
+					}
+					image {
+						mediaImage {
+							url
+							alt
+						}
+					}
+				}
+			}
+			metatag {
+				... on MetaTagValue {
+					__typename
+					attributes {
+						content
+					}
+				}
+			}
+		}
+		... on NodeSportSchool {
+			__typename
+			id
+			title
+			button {
+				url {
+					title
+					url
+				}
+			}
+			carruselImages {
+				mediaImage {
+					url
+					alt
+				}
+			}
+			tabsInfo {
+				itemsInfo {
+					tabTitle
+					tabBody {
+						processed
+					}
+					items {
+						description
+						title
+						icon {
+							mediaImage1 {
+								url
+								alt
+							}
+						}
+					}
+				}
+			}
+			body {
+				processed
+			}
+			sectionCifras {
+				itemsCifrasTurismo {
+					componenteTitle {
+						title
+						pSubtitle
+					}
+					icon {
+						mediaImage1 {
+							url
+							alt
+						}
+					}
+				}
+			}
+			sectionCards {
+				componenteTitle {
+					title
+					pSubtitle
+				}
+				button {
+					url {
+						url
+						title
+					}
+				}
+				itemsCardPlan {
+					componenteTitle {
+						title
+						pSubtitle
+					}
+					image {
+						mediaImage {
+							url
+							alt
+						}
+					}
+				}
+			}
+			metatag {
+				... on MetaTagValue {
+					__typename
+					attributes {
+						content
+					}
+				}
+			}
+		}
+	}
+}

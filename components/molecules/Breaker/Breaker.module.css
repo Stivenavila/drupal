@@ -1,0 +1,14 @@
+.Breaker {
+    min-height: 300px;
+}
+
+.Breaker .BreakerBody {
+    flex: 0 1 60%
+}
+
+@media (min-width: 768px) {
+    .Breaker .BreakerImage {
+        flex: 0 1 40%;
+        max-width: 40%
+    }
+}

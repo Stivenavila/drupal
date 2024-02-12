@@ -1,0 +1,9 @@
+.CarouselProduct__carousel {
+    width: 100%;
+}
+
+.CarouselProduct__carousel>div:last-child {
+    position: relative;
+}
+
+@media (min-width: 768px) {}

@@ -1,0 +1,19 @@
+.main-menu__toggle-item {
+    position: absolute;
+    top: calc(100% + 18px);
+    left: 0;
+    width: max-content;
+    background-color: var(--white);
+}
+
+.main-menu__toggle-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    border-left: 18px solid var(--white);
+    border-top: 18px solid transparent;
+    border-bottom: 0;
+    border-right: 0;
+    z-index: 1;
+}

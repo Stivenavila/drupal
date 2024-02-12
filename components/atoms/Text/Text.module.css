@@ -1,0 +1,65 @@
+.heading {
+  text-decoration: none;
+}
+
+.paragraph {
+  line-height: 21px;
+}
+
+.heading a {
+  text-decoration: none;
+}
+
+.underline::after {
+  display: block;
+  content: '';
+  width: 78px;
+  height: 8px;
+  background-color: var(--green);
+  margin-top: 1rem;
+}
+
+.hashLinkContainer {
+  position: relative;
+}
+
+.icon {
+  width: 1rem;
+  line-height: 2.25;
+  height: 2rem;
+  margin: -0.2rem 0.5rem;
+  outline: none;
+}
+
+/* Hide on mobile always */
+@media screen and (--small-viewport) {
+  .hashLinkContainer a {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.heading .icon {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s linear opacity, 0.2s linear visibility;
+}
+
+.Text_Body ul {
+  list-style: initial;
+  padding-left: 30px;
+  font-weight: 300;
+}
+
+.Text_Container {
+  width: 100%;
+}
+
+@media (max-width: 998px) {
+  .Text_Container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

@@ -1,0 +1,12 @@
+export { default as Angle } from './Angle'
+export { default as Logo } from './Logo'
+export { default as LogoMobile } from './LogoMobile'
+export { default as LogoText } from './LogoText'
+export { default as SuperSubsidio } from './SuperSubsidio'
+export { default as CartShopping } from './CartShopping'
+export { default as Arrow } from './Arrow'
+export { default as Money } from './Money'
+export { default as Subsidio } from './Subsidio'
+export { default as Location } from './Location'
+export { default as Dogs } from './Dogs'
+export { default as Play } from "./Play";

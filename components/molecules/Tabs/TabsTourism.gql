@@ -1,0 +1,75 @@
+query MyQuery {
+	nodeLandings(first: 10) {
+		nodes {
+			content {
+				... on ParagraphSlideTurismo {
+					componentSlideTurism {
+						behaviors {
+							background_behavior {
+								background_position
+								background_style
+								select_color
+								image {
+									url
+									alt
+								}
+							}
+							margin_behavior {
+								margin_bottom
+								margin_left
+								margin_right
+								margin_top
+							}
+							padding_behavior {
+								padding_bottom
+								padding_left
+								padding_right
+								padding_top
+							}
+						}
+						persons: slideTurismo(
+						filter: { key: "field_to_whom_target_id", value: "Personas" }
+						) {
+							... on TurismoSlideResult {
+								results {
+									... on NodeRecreationActivity {
+										title
+										path
+										carruselImages {
+											mediaImage {
+												url
+												alt
+											}
+										}
+									}
+								}
+							}
+						}
+						enterprises: slideTurismo(
+						filter: { key: "field_to_whom_target_id", value: "Empresas" }
+						) {
+							... on TurismoSlideResult {
+								results {
+									... on NodeRecreationActivity {
+										title
+										path
+										carruselImages {
+											mediaImage {
+												url
+												alt
+											}
+										}
+									}
+								}
+							}
+						}
+						componenteTitle {
+							title
+							pSubtitle
+						}
+					}
+				}
+			}
+		}
+	}
+}

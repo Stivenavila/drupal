@@ -1,0 +1,39 @@
+.CardNews {
+    width: 100%;
+    position: relative;
+    display: grid;
+}
+
+.CardNews .cardNewImage {
+    grid-column: -1/1;
+    grid-row: -1/1;
+}
+
+.CardNews .CardNews__content {
+    width: 100%;
+    background-color: rgba(8, 83, 158, 0.35);
+    padding: 1rem 10px 19px;
+
+
+}
+
+.CardNews .CardNews__content::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 5px;
+    background-color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+.CardNews .CardNews__container {
+    position: relative;
+    grid-column: -1/1;
+    grid-row: -1/1;
+    padding: 0 1rem 20px;
+}
+
+.CardNews .CardNews__tag {
+    width: 40px;
+    height: 46px;
+}

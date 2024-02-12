@@ -1,0 +1,27 @@
+.CardAccommodation {
+    position: relative;
+    box-shadow: 0px 9px 10px 0px #003C6A12;
+    padding: 20px 30px;
+    min-height: 281px;
+}
+
+.CardAccommodation .image {
+    flex: 0 1 30%;
+}
+
+.CardAccommodation .content {
+    flex-grow: 1;
+}
+
+@media (min-width: 998px) {
+    .CardAccommodation {
+        position: relative;
+        box-shadow: 0px 9px 10px 0px #003C6A12;
+        padding: 20px 30px;
+        min-height: 281px;
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

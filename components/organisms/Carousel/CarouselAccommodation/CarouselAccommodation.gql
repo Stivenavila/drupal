@@ -1,0 +1,54 @@
+query MyQuery {
+	nodeLandings(first: 10) {
+		nodes {
+			content {
+				... on ParagraphContainerSlideLodging {
+					id
+					componentSlideLodging {
+						behaviors {
+							background_behavior {
+								background_position
+							}
+						}
+						componenteTitle {
+							title
+							pSubtitle
+						}
+						slideLodging {
+							... on ViewLodgingResult {
+								id
+								results {
+									... on NodeLodging {
+										id
+										title
+										subTitle
+										lodgingServices {
+											itemsIcons {
+												title
+												icon {
+													mediaImage1 {
+														url
+														alt
+													}
+												}
+											}
+										}
+										petFriendly
+										seasonalDiscount
+										path
+										carruselImages {
+											mediaImage {
+												url
+												alt
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

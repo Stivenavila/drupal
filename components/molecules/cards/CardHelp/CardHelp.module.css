@@ -1,0 +1,12 @@
+.CardHelp {
+    display: block;
+    box-shadow: 0px 10px 20px 0px #003C6A26;
+    padding: 22px 28px;
+}
+
+.CardHelp .Heading {
+    border-top: 1px solid;
+    padding-top: 1rem;
+    margin-top: 40px;
+
+}

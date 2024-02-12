@@ -1,0 +1,7 @@
+.CarouselConvenio__carousel {
+    width: 100%;
+}
+
+.CarouselConvenio__carousel>div:last-child {
+    position: relative;
+}

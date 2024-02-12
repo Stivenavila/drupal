@@ -1,0 +1,12 @@
+.CardDetails {
+    display: block;
+    box-shadow: 0px 10px 20px 0px #003C6A26;
+    padding: 22px 28px;
+}
+
+.CardDetails .Heading {
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+    margin-bottom: 40px;
+
+}

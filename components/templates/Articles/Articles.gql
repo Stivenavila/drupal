@@ -1,0 +1,25 @@
+fragment Articles on NodeArticle {
+	__typename
+	id
+	title
+	path
+	body {
+		processed
+	}
+	image {
+		url
+		title
+		alt
+	}
+	created {
+		time
+	}
+	metatag {
+		... on MetaTagValue {
+			__typename
+			attributes {
+				content
+			}
+		}
+	}
+}

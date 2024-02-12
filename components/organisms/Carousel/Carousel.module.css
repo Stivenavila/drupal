@@ -1,0 +1,45 @@
+@media (min-width: 998px) {
+  .carouselBanner {
+    background-image: linear-gradient(to right, transparent 65%, var(--main-section-color) 35%);
+  }
+
+  .CarouselConvenio {
+    background-size: 100%;
+  }
+
+  .CarouselImage {
+    width: 100%;
+  }
+
+  .CarouselImage .CarouselImageThumbnail {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .CarouselImage .CarouselImageMain {
+    width: 100%;
+  }
+}
+
+@media (max-width: 998px) {
+  .carouselBanner {
+    background-image: linear-gradient(to bottom, transparent 70%, var(--main-section-color) 30%);
+  }
+
+  .carouselBanner ul li article>div:last-child::after {
+    content: '';
+    @apply absolute;
+    @apply top-10;
+    @apply -left-7;
+    @apply -right-7;
+    @apply -bottom-7;
+    @apply -z-1;
+    background-color: var(--main-section-color);
+
+  }
+
+  .carouselBanner article {
+    padding-bottom: 3rem;
+  }
+
+}

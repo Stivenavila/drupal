@@ -1,0 +1,77 @@
+.CardIcon {
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 60, 106, 0.07);
+    background-color: white;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardIcon--vivienda {
+    width: 100%;
+    margin-left: 2rem;
+    min-height: 98px;
+    padding: 0 1rem;
+}
+
+.CardIcon .CardIcon__tag {
+    box-shadow: 0px 4px 10px 0px #003C6A2B;
+    background-color: var(--white-text);
+    max-width: 65px;
+    position: absolute;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    width: 65px;
+    height: 65px;
+}
+
+.CardIcon .Tag__vivienda {
+    position: static;
+    transform: initial;
+}
+
+@media (min-width: 998px) {
+    .CardIcon {
+        margin-left: 1rem;
+        min-height: 124px;
+    }
+
+    .CardIcon--vivienda {
+        max-width: 262px;
+        margin-left: 2rem;
+        padding: 0;
+    }
+
+    .CardIcon .CardIcon__tag {
+        left: -1rem;
+        transform: none;
+    }
+
+    .CardIcon--vivienda .Tag__vivienda {
+        position: absolute;
+        left: -2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 998px) {
+    .CardIcon--vivienda {
+        margin-left: 0;
+    }
+
+    .CardIcon--vivienda .Content__vivienda {
+        padding-top: 0 !important;
+    }
+
+    .CardIcon--vivienda .Heading__vivienda {
+        font-size: 1rem !important;
+    }
+}

@@ -1,0 +1,64 @@
+    .CarouselImage .bgCarouselImage {
+        position: relative;
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+
+    .CarouselImage .bgCarouselImage::before {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100px;
+        background-color: var(--green);
+    }
+
+    @media (min-width: 998px) {
+
+        .CarouselImage {
+            width: 100%;
+            position: relative;
+        }
+
+        .CarouselImage .CarouselImageThumbnail {
+            width: auto;
+            margin-top: 2rem;
+        }
+
+        .CarouselImage .CarouselImageThumbnail ul {
+            justify-content: center;
+        }
+
+        .CarouselImage .CarouselImageMain {
+            width: 100%;
+        }
+
+        .CarouselImage .CarouselImageMain>div>button:first-child {
+            left: -31px;
+        }
+
+        .CarouselImage .CarouselImageMain>div>button:last-child {
+            right: -31px;
+        }
+
+    }
+
+    @media (max-width: 998px) {
+        .CarouselImage>div>ul {
+            top: calc(100% + 21px);
+            bottom: initial;
+        }
+
+        .CarouselImage .CarouselImageThumbnail {
+            display: none
+        }
+
+        .CarouselImage .bgCarouselImage {
+            padding-top: 2rem;
+        }
+
+        .CarouselImage .bgCarouselImage::before {
+            top: -10px;
+        }
+    }

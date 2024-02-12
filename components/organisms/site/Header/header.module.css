@@ -1,0 +1,32 @@
+.navigate {
+  border-bottom: 1px solid transparent;
+}
+
+.header {
+  width: 100%;
+  padding: 0 1.5rem;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header .virtual {
+  letter-spacing: 1.5px;
+}
+
+.header button+button {
+  margin-left: 10px;
+}
+
+@media (min-width: 998px) {
+  .header {
+    padding: 30px 20px 17px;
+  }
+
+  .header-container {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}

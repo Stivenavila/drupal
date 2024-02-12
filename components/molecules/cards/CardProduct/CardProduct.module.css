@@ -1,0 +1,19 @@
+.CardProduct {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 9px 10px 0px rgba(0, 60, 106, 0.07);
+    background-color: white;
+    display: block;
+}
+
+.CardProduct::before {
+    content: '';
+    background-color: var(--green-dark);
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10px;
+    right: -40px;
+    width: 100px;
+    height: 50px;
+}

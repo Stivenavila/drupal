@@ -1,0 +1,21 @@
+.card-cifras {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card-cifras .card-cifras__link {
+    width: 100%;
+}
+
+.card-cifras .card-cifras__image {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:998px) {
+        width: 100%;
+        max-width: 100px;
+    }
+
+
+}

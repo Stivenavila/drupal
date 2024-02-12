@@ -1,0 +1,23 @@
+.CarouselRecreation__carousel {
+  width: 100%;
+}
+
+.CarouselRecreation__carousel>div:last-child {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  /* .CarouselConvenio__carousel>div:last-child::before {
+        content: '';
+        border-radius: 20px 0;
+        background: #3336;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: auto;
+        aspect-ratio: 25/24;
+        z-index: 1;
+        margin-right: -9.1%;
+    } */
+}

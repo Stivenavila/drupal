@@ -1,0 +1,55 @@
+.TabsVideo {
+    width: 100%;
+}
+
+.TabsVideo nav {
+    border-bottom: 1px solid var(--white);
+}
+
+.TabsVideo nav ul li {
+    min-width: 190px;
+    max-width: 210px;
+    text-align: center;
+}
+
+.TabsVideo .TabsItem {
+    font-size: 15px;
+}
+
+.TabsVideo .TabsItem.active {
+    border-bottom: 5px solid var(--white);
+    padding-bottom: 0.8rem;
+}
+
+.TabsVideo .TabsContent {
+    max-height: 730px;
+    overflow-y: auto;
+}
+
+.TabsInfo {
+    width: 100%;
+}
+
+.TabsInfo nav {
+    border-bottom: 1px solid var(--primary);
+}
+
+.TabsInfo nav ul li {
+    min-width: 190px;
+    max-width: 210px;
+    text-align: center;
+}
+
+.TabsInfo .TabsItem {
+    font-size: 15px;
+}
+
+.TabsInfo .TabsItem.active {
+    border-bottom: 5px solid var(--primary);
+    padding-bottom: 0.8rem;
+}
+
+.TabsInfo .TabsContent {
+    max-height: 730px;
+    overflow-y: auto;
+}

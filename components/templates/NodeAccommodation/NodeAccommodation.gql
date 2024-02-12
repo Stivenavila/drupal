@@ -1,0 +1,132 @@
+... on NodeLodging {
+	__typename
+	title
+	subTitle
+	carruselImages {
+		mediaImage {
+			alt
+			url
+		}
+	}
+	lodgingCard {
+		price
+		image {
+			mediaImage {
+				url
+				alt
+			}
+		}
+		button {
+			url {
+				url
+				internal
+			}
+		}
+	}
+	lodgingDescription {
+		processed
+	}
+	lodgingServices {
+		textHtml {
+			processed
+		}
+		itemsIcons {
+			icon {
+				mediaImage1 {
+					url
+					alt
+				}
+			}
+			title
+		}
+		title
+	}
+	lodgingSchedules {
+		componenteTitle {
+			title
+			pSubtitle
+		}
+		checkOut
+		checkIn
+		textHtml {
+			processed
+		}
+	}
+	lodgingRates {
+		season {
+			title
+			itemSeason {
+				entry
+				categoriaA
+				categoriaB
+				categoriaC
+				categoriaD
+			}
+			description {
+				processed
+			}
+		}
+		title
+	}
+	lodgingPayAttention {
+		processed
+	}
+	lodgingInfoLegal {
+		processed
+	}
+	sectionCifras {
+		itemsCifrasTurismo {
+			icon {
+				mediaImage1 {
+					url
+					alt
+				}
+			}
+			componenteTitle {
+				title
+				pSubtitle
+			}
+		}
+	}
+	lodgingMapCard {
+		link {
+			url
+		}
+		title
+	}
+	sectionCards {
+		itemsCardPlan {
+			image {
+				mediaImage {
+					url
+					alt
+				}
+			}
+			componenteTitle {
+				title
+				pSubtitle
+			}
+		}
+		componenteTitle {
+			title
+			pSubtitle
+		}
+		button {
+			url {
+				url
+				title
+			}
+		}
+	}
+	lodgingInfo {
+		textHtml {
+			processed
+		}
+		button {
+			url {
+				url
+				title
+			}
+		}
+	}
+}

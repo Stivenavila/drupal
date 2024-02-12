@@ -1,0 +1,11 @@
+.CardVideoModal {
+    width: 100%;
+}
+
+.CardVideoModal .Play {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: rgba(246, 246, 246, 0.35);
+    backdrop-filter: blur(1.5px);
+}

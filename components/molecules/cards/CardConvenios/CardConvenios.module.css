@@ -1,0 +1,5 @@
+@media (min-width: 998px) {
+    .CardConvenios {
+        background-image: linear-gradient(to bottom, transparent 50%, var(--celeste) 50%);
+    }
+}
