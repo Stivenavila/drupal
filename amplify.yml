@@ -7,7 +7,7 @@ frontend:
     preBuild:
       commands:
         - npm install
-        - npm audit
+        - npm audit fix --force
         - npm ci
         - env | grep -e DRUPAL_CLIENT_ID -e DRUPAL_CLIENT_ID >> .env.staging
         - env | grep -e DRUPAL_CLIENT_SECRET -e DRUPAL_CLIENT_SECRET >> .env.staging
