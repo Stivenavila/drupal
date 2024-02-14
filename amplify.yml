@@ -1,0 +1,30 @@
+version: 1
+frontend:
+  phases:
+    install:
+      runtime-versions:
+        nodejs: 18.17.0
+    preBuild:
+      commands:
+        - npm update
+        - npm install
+        - npm ci
+        - env | grep -e DRUPAL_CLIENT_ID -e DRUPAL_CLIENT_ID >> .env.staging
+        - env | grep -e DRUPAL_CLIENT_SECRET -e DRUPAL_CLIENT_SECRET >> .env.staging
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: ./.next
+    files:
+      - '**/*'
+
+backend:
+  phases:
+    build:
+      commands: []
+    deploy:
+      commands:
+        - amplify update auth
+        - amplify push --yes
+        - amplify publish --yes
