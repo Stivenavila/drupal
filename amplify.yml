@@ -6,15 +6,13 @@ frontend:
         nodejs: 18.17.0
     preBuild:
       commands:
-        - npm install
-        - npm outdated
-        - npm update
-        - npm ci
+        - yarn install
+        - yarn cache clean
         - env | grep -e DRUPAL_CLIENT_ID -e DRUPAL_CLIENT_ID >> .env.staging
         - env | grep -e DRUPAL_CLIENT_SECRET -e DRUPAL_CLIENT_SECRET >> .env.staging
     build:
       commands:
-        - npm run build
+        - yarn build
   artifacts:
     baseDirectory: ./.next
     files:
